@@ -1,0 +1,10 @@
+<resources>
+    <string name="header_detail_analysis">Detail Analisis</string>
+    <string name="disease_label">Penyakit:</string>
+    <string name="disease_detail">Akibat penyiraman tidak teratur, kelembapan tinggi, atau buah yang terlalu matang. Retakan ini membuka jalan bagi infeksi sekunder oleh bakteri atau jamur. Untuk mencegahnya, jaga konsistensi penyiraman, gunakan mulsa, pilih varietas tahan retak, dan panen buah sebelum terlalu matang.</string>
+    <string name="solution_header">Solusi:</string>
+    <string name="solution_detail">Gunakan fungisida berbahan tembaga, jaga konsistensi penyiraman, dan lakukan pemangkasan untuk mencegah retak buah.</string>
+    <string name="button_back">Kembali</string>
+    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="app_name">Plant Scan</string>
+</resources>

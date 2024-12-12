@@ -1,0 +1,157 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="70dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Tipe Tanaman TextView -->
+            <TextView
+                android:id="@+id/plantTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant Type: "
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="#4EA128"/>
+
+            <!-- Kotak Utama -->
+            <LinearLayout
+                android:layout_width="316dp"
+                android:layout_height="316dp"
+                android:layout_marginBottom="75dp"
+                android:background="#D9D9D9"
+                android:gravity="center"
+                android:padding="50dp">
+
+                <ImageView
+                    android:id="@+id/linearLayoutCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/baseline_image_24"
+                    android:alpha="0"
+                    tools:alpha="900"/>
+
+
+            </LinearLayout>
+
+            <!-- Dua Kotak Hijau -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btncamera"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4EA128"
+                    android:paddingHorizontal="20dp"
+                    android:gravity="center"
+                    android:elevation="1dp"
+                    android:layout_marginEnd="70dp"
+                    android:drawableTop="@drawable/baseline_camera_alt_24"
+                    android:text="Camera"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:onClick="openCamera"
+                    android:alpha="0"
+                    tools:alpha="900"/>
+
+                <!-- Button untuk Galeri -->
+                <Button
+                    android:id="@+id/btngalery"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4EA128"
+                    android:paddingHorizontal="20dp"
+                    android:gravity="center"
+                    android:elevation="1dp"
+                    android:drawableTop="@drawable/baseline_add_photo_alternate_24"
+                    android:text="Gallery"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:onClick="openGallery"
+                    android:alpha="0"
+                    tools:alpha="900"/>
+            </LinearLayout>
+
+            <!-- Tombol Back dan Analyze -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="70dp"
+                    android:backgroundTint="#4EA128"
+                    android:paddingVertical="5dp"
+                    android:text="Back"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:alpha="0"
+                    tools:alpha="900"/>
+
+                <Button
+                    android:id="@+id/btnAnalyze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#4EA128"
+                    android:drawablePadding="5dp"
+                    android:paddingVertical="5dp"
+                    android:text="Analyze"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:alpha="0"
+                    tools:alpha="900"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/progressBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
